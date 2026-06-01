@@ -53,28 +53,30 @@ $$\sigma = \sqrt{\frac{\sum(y - \hat{y})^2}{n}}$$
 ### Prerequisites
 Make sure your development machine has **Node.js** and an npm package manager fully installed.
 
+---
 ### Installation & Local Setup
 
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/yourusername/ledger-mono.git](https://github.com/yourusername/ledger-mono.git)
    cd ledger-mono
-Install core visual dependencies:
-
-Bash
+2. **Install core visual dependencies:**
+   ```bash
 npm install lucide-react
 Verify Global Fonts: Ensure your document layer (index.html) calls the appropriate typography weight headers inside the parent <head> markup block:
 
-HTML
-<link href="[https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;700&display=swap](https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;700&display=swap)" rel="stylesheet">
 Launch Local Server:
 
-Bash
 npm run dev
-Project Structure
-Code snippet
-├── src/
-│   ├── App.jsx            # Core Application Shell (Data state, calculations, and UI grid layout)
-│   └── index.css          # Global styles alongside Tailwind directives
-License
+
+
+---
+
+## 🗺️ Project Structure
+
+```text
+└── src/
+    ├── App.jsx            # Core Application Shell (Data state, calculations, and UI grid layout)
+    └── index.css          # Global styles alongside Tailwind directives
+📝 License
 Distributed under the MIT License. See LICENSE for more information.
