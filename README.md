@@ -1,16 +1,86 @@
-# React + Vite
+# ledger.mono
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-density, brutalist financial dashboard built with React and Tailwind CSS. Emphasizing a strict monospace aesthetic, it features real-time performance, client-side data states, zero heavy charting library dependencies, and an inline 3-month predictive linear regression engine.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![Lucide React](https://img.shields.io/badge/Lucide_React-000000?style=flat&logo=lucide&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ⚡ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Brutalist Monospace UX:** High-contrast, zero-radius border design language using the `DM Mono` typeface for optimized scannability.
+* **Mathematical Forecasting:** Built-in client-side trend projection computing 3 months into the future with calculated statistical confidence boundaries.
+* **Pure SVG Data Visualizations:** Lightweight, ultra-performant charting built completely using native SVG vectors rather than bulky third-party libraries.
+  * **Category Spending Radar:** An angular geometric plot mapping proportional variance across variable costs.
+  * **Expense Distribution Donut:** Fast percentage breakdowns via stroke-dasharray tracking.
+  * **Running Net Balance Sparkline:** Vector-mapped chronological cash flow baseline with custom linear gradient areas.
+  * **Grouped Monthly Bars:** Parallel metrics identifying disparity between aggregate incomes and expenditures.
+* **Granular Multi-Filtering:** Instant sorting states based across multi-category select tags and transactional directions.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **Core UI Engine:** React 18 (Optimized using `useMemo` hooks for heavy analytical derivations)
+* **Styling Framework:** Tailwind CSS
+* **Iconography Library:** `lucide-react`
+* **Typography Payload:** Google Fonts (`DM Mono`)
+
+---
+
+## 📈 Analytical Engine Under the Hood
+
+Unlike flat ledger storage setups, this software runs automated analytical mathematical equations on historical trends to project potential financial runaways.
+
+### 1. Trend Line Estimation
+The linear regression engine isolates chronological data segments to deduce slope ($m$) and interception anchors ($b$) via the ordinary least squares technique:
+
+$$m = \frac{n\sum(xy) - \sum x \sum y}{n\sum(x^2) - (\sum x)^2}$$
+
+$$b = \frac{\sum y - m\sum x}{n}$$
+
+### 2. Standard Deviation Volatility Thresholds
+To prevent flat projections from masking erratic variance, the system computes structural confidence limits against future vectors. By extracting residuals from historic trends, it maps standard deviation bands ($\pm 1.5\sigma$) instantly using translucent SVG polygon polygons:
+
+$$\sigma = \sqrt{\frac{\sum(y - \hat{y})^2}{n}}$$
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+Make sure your development machine has **Node.js** and an npm package manager fully installed.
+
+### Installation & Local Setup
+
+1. **Clone the repository:**
+```bash
+   git clone [https://github.com/yourusername/ledger-mono.git](https://github.com/yourusername/ledger-mono.git)
+   cd ledger-mono
+```
+
+2. **Install core visual dependencies:**
+```bash
+   npm install lucide-react
+```
+
+3. **Verify Global Fonts: Ensure your document layer (index.html) calls the appropriate typography weight headers inside the parent <head> markup block:**
+```bash
+   <link href="[https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;700&display=swap](https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;700&display=swap)" rel="stylesheet">
+```
+
+5. **Launch Local Server:**
+```bash
+   npm run dev
+```
+
+## Project Structure
+```bash
+└── src/
+    ├── App.jsx            # Core Application Shell (Data state, calculations, and UI grid layout)
+    └── index.css          # Global styles alongside Tailwind directives
+```
+### License
+Distributed under the MIT License. See LICENSE for more information.
