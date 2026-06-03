@@ -6,9 +6,10 @@ A high-density, brutalist financial dashboard built with React and Tailwind CSS.
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 ![Lucide React](https://img.shields.io/badge/Lucide_React-000000?style=flat&logo=lucide&logoColor=white)
 
+
 ---
 
-## ⚡ Features
+## Features
 
 * **Brutalist Monospace UX:** High-contrast, zero-radius border design language using the `DM Mono` typeface for optimized scannability.
 * **Mathematical Forecasting:** Built-in client-side trend projection computing 3 months into the future with calculated statistical confidence boundaries.
@@ -21,7 +22,7 @@ A high-density, brutalist financial dashboard built with React and Tailwind CSS.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Core UI Engine:** React 18 (Optimized using `useMemo` hooks for heavy analytical derivations)
 * **Styling Framework:** Tailwind CSS
@@ -30,7 +31,7 @@ A high-density, brutalist financial dashboard built with React and Tailwind CSS.
 
 ---
 
-## 📈 Analytical Engine Under the Hood
+## Analytical Engine Under the Hood
 
 Unlike flat ledger storage setups, this software runs automated analytical mathematical equations on historical trends to project potential financial runaways.
 
@@ -48,7 +49,7 @@ $$\sigma = \sqrt{\frac{\sum(y - \hat{y})^2}{n}}$$
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 Make sure your development machine has **Node.js** and an npm package manager fully installed.
